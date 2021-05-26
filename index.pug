@@ -1,0 +1,52 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Scroll Animations using GSAP ScrollTrigger Plugin | CSS Grid
+
+    link(rel="stylesheet", href="./assets/css/index.css")
+
+  body
+    .component
+      header.component__header
+        ul.component__menu 
+          each val, index in ['Home', 'About us', 'How it Works', 'Contact']
+            li.component__menu-item
+              a.component__menu-link= val
+        ul.component__menu.menu-right
+          each val, index in ['Blog', 'FAQ']
+            li.component__menu-item
+              a.component__menu-link= val
+      
+      section.component__first
+        .component__info 
+          h1.component__heading-1 Lorem ipsum dolor sit amet consectetur.
+          p.component__paragraph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, sunt!
+          a.component__btn.component__btn--start(href="") Lorem, ipsum
+        
+        .component__visuals
+          .component__image-container
+            picture
+              img(src="./assets/img/photo-3.jpeg", alt="")
+          .component__image-container
+            picture
+              img(src="./assets/img/photo-1.jpeg", alt="")
+      
+      section.component__second 
+        .component__box 
+        h4.component__heading-4#about Lorem ipsum
+        h1.component__heading-1#buy Lorem ipsum dolor sit amet consectetur.
+        .component__info-1
+          .component__info-text
+            span.component__quote
+            | "
+            h2.component__heading-3 Lorem ipsum dolor sit amet consectetur.
+            p.component__paragraph Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor quas totam quaerat ipsam, nihil nostrum cumque blanditiis earum. Quo, nemo!
+
+            a.component__btn--learn(href="") Lorem, ipsum
+          .component__info-visual 
+            img(src="./assets/img/photo-4.jpeg", alt="")
+
+    script(src="./assets/js/index.js") 
