@@ -11,28 +11,28 @@ html(lang="en")
   body
     .component
       header.component__header
-        ul.component__menu 
+        ul.component__menu#menu
           each val, index in ['Home', 'About us', 'How it Works', 'Contact']
             li.component__menu-item
               a.component__menu-link= val
-        ul.component__menu.menu-right
+        ul.component__menu.menu-right#menuSecond
           each val, index in ['Blog', 'FAQ']
             li.component__menu-item
               a.component__menu-link= val
       
       section.component__first
         .component__info 
-          h1.component__heading-1 Lorem ipsum dolor sit amet consectetur.
+          h1.component__heading-1#heading-1 Lorem ipsum dolor sit amet consectetur.
           p.component__paragraph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, sunt!
           a.component__btn.component__btn--start(href="") Lorem, ipsum
         
         .component__visuals
           .component__image-container
-            img(src="./assets/img/photo-3.jpeg", alt="")
+            img#imageFirst(src="./assets/img/photo-3.jpeg", alt="")
           .component__image-container
-            img(src="./assets/img/photo-1.jpeg", alt="")
+            img#imageSecond(src="./assets/img/photo-1.jpeg", alt="")
       
-      section.component__second 
+      section.component__second#secondSection
         .component__box 
         h4.component__second-heading-4#about Lorem ipsum
         h1.component__second-heading-1#buy Lorem ipsum dolor sit amet consectetur.
@@ -47,4 +47,7 @@ html(lang="en")
           .component__info-visual 
             img(src="./assets/img/photo-4.jpeg", alt="")
 
+
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js") 
     script(src="./assets/js/index.js") 
