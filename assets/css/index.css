@@ -134,6 +134,8 @@ body {
       -ms-grid-row: 1;
       -ms-grid-row-span: 4;
       grid-row: 1 / 5; }
+  .component__image-container {
+    overflow: hidden; }
   .component__second {
     padding: 0px 20px;
     border-right: 1px solid #f0f0f0;
