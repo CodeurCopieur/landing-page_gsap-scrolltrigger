@@ -10,28 +10,28 @@
   <body>
     <div class="component">
       <header class="component__header">
-        <ul class="component__menu"> 
+        <ul class="component__menu" id="menu">
           <li class="component__menu-item"><a class="component__menu-link">Home</a></li>
           <li class="component__menu-item"><a class="component__menu-link">About us</a></li>
           <li class="component__menu-item"><a class="component__menu-link">How it Works</a></li>
           <li class="component__menu-item"><a class="component__menu-link">Contact</a></li>
         </ul>
-        <ul class="component__menu menu-right">
+        <ul class="component__menu menu-right" id="menuSecond">
           <li class="component__menu-item"><a class="component__menu-link">Blog</a></li>
           <li class="component__menu-item"><a class="component__menu-link">FAQ</a></li>
         </ul>
       </header>
       <section class="component__first">
         <div class="component__info"> 
-          <h1 class="component__heading-1">Lorem ipsum dolor sit amet consectetur.</h1>
+          <h1 class="component__heading-1" id="heading-1">Lorem ipsum dolor sit amet consectetur.</h1>
           <p class="component__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, sunt!</p><a class="component__btn component__btn--start" href="">Lorem, ipsum</a>
         </div>
         <div class="component__visuals">
-          <div class="component__image-container"><img src="./assets/img/photo-3.jpeg" alt=""></div>
-          <div class="component__image-container"><img src="./assets/img/photo-1.jpeg" alt=""></div>
+          <div class="component__image-container"><img id="imageFirst" src="./assets/img/photo-3.jpeg" alt=""></div>
+          <div class="component__image-container"><img id="imageSecond" src="./assets/img/photo-1.jpeg" alt=""></div>
         </div>
       </section>
-      <section class="component__second"> 
+      <section class="component__second" id="secondSection">
         <div class="component__box"> </div>
         <h4 class="component__second-heading-4" id="about">Lorem ipsum</h4>
         <h1 class="component__second-heading-1" id="buy">Lorem ipsum dolor sit amet consectetur.</h1>
@@ -44,6 +44,8 @@
         </div>
       </section>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"> </script>
     <script src="./assets/js/index.js"> </script>
   </body>
 </html>
