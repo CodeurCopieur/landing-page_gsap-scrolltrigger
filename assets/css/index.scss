@@ -95,6 +95,7 @@ body {
   &__btn--start {
     grid-row: 4 / -1;
     grid-column: 1 / -1;
+    text-decoration: none;
   }
 
   &__visuals{
@@ -136,6 +137,7 @@ body {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(6, min-content);
     grid-gap: 20px;
+    margin-bottom: 100px;
   }
 
   &__box {
