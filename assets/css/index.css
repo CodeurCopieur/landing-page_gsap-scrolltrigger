@@ -108,7 +108,8 @@ body {
     grid-column: 1 / 3; }
   .component__btn--start {
     grid-row: 4 / -1;
-    grid-column: 1 / -1; }
+    grid-column: 1 / -1;
+    text-decoration: none; }
   .component__visuals {
     display: -ms-grid;
     display: grid;
@@ -152,7 +153,8 @@ body {
     -ms-grid-rows: (min-content)[6];
     grid-template-rows: repeat(6, -webkit-min-content);
     grid-template-rows: repeat(6, min-content);
-    grid-gap: 20px; }
+    grid-gap: 20px;
+    margin-bottom: 100px; }
   .component__box {
     width: 600px;
     height: 500px;
